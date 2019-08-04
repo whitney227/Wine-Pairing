@@ -1,0 +1,23 @@
+{
+  "name": "wine-pairing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whitney227/Wine-Pairing.git"
+  },
+  "author": "Whitney Crawford",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whitney227/Wine-Pairing/issues"
+  },
+  "homepage": "https://github.com/whitney227/Wine-Pairing#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
