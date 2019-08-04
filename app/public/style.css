@@ -1,0 +1,51 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+}
+
+.navbar-text{
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+}
+
+.nav-item{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+}
+.parallax {
+    /* The image used */
+    background-image: url("./images/parallax.png");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #parallax-img {
+    max-width: 100%;
+    height: auto;
+  }
+  #title101{
+      text-align: center;
+      vertical-align: inherit;
+      font-family: 'Sacramento', cursive;
+      font-size: 40px
+  }
+  #body101{
+    vertical-align: inherit;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+
+  }
