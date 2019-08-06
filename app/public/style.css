@@ -80,19 +80,37 @@ img {
     height: auto;
 }
 
-.carousel-inner{
-    height: 540px;
-} 
 .carousel-item {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
-.inner-text{
-    display:inline-block;
+.cleanWine{
     font-family: "Oswald", sans-serif;
     text-align: center;
     min-width:300px;
     letter-spacing: 3px;
+    padding-top: 10px;
 }
+.wine101{
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+#contactMe{
+    font-family: "Oswald", sans-serif;
+}
+.page-footer{
+    font-family: "Oswald", sans-serif;
+}
+.font-small {
+    font-size: 1.9rem;
+}
+.fab{
+    padding: 5px;
+}
+
