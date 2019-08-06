@@ -12,30 +12,41 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sacramento&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
       
     </head>
     
     <body>
         <!--Navbar-->
-        <nav class="navbar navbar-light">
+        <nav class="navbar navbar-dark bg-dark">
 
         <!-- Navbar brand -->
-        <a class="navbar-text" href="#">Sip   > Wine</a>
+        <a class="navbar-text" href="#"></a>
    
         <!-- Collapse button -->
-        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-          aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"><span class="dark-blue-text"><i
-              class="fas fa-bars fa-1x"></i></span></button>
+        <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+          aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="animated-icon1"><span></span><span></span><span></span></div>
+        </button>
       
         <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent20">
       
             <!-- Links -->
             <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Meet Lindsey</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Host a Tasting</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Join the CLEAN-CRAFTED™ Journey</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" target="_blank" href="https://scoutandcellar.com/">Shop Online</a>
@@ -48,19 +59,46 @@
 
     <!-- Content start -->
     <div class="container-fluid">
-        <!-- Parallax -->
-        <div class="parallax">
-            <img id="parallax-image"src="images/parallax.png" alt="wine bottles">
+
+        <!-- Header -->
+        <div class="header">
+            <img id="SClogo" src="./images/SC.png" alt="consultant logo">
         </div>
-        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-            <p id="title101">Clean-Crafted Wine 101</p>
-            <p id="body101">
-                    Wine is a tricky business, because when it comes to their growth cycle, grapes tend to march to the beat of their own drum. Their natural flavor, color and growing cycle is driven by nature. To capture sameness and establish predictability, producers rely on synthetic pesticides, chemical additives and sugar, which yield a product that tastes the same, bottle after bottle, year after year. Chemical pesticides and additives also make it possible to maximize yields and hide flaws, like bacteria and other unpleasant elements. Unfortunately, this processed wine is chemically-altered and completely unnatural, and you can taste it. We’re here to offer a chemical, additive-free wine, which provides more natural, altogether better-tasting wine experience to everyone. We’re here to offer CLEAN-CRAFTED™ wine.
-            </p>
+
+        <!-- Carousel -->
+        <div id="carouselSlideshow" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-interval="5000">
+                    <img src="./images/12BottleMixed.jpg" class="d-block w-100" alt="wine bottles">
+                </div>
+                <div class="carousel-item" data-interval="5000">
+                    <img src="./images/2017 The Resident Pinot Noir 2.jpg" class="d-block w-100" alt="wine bottles">
+                </div>
+                <div class="carousel-item" data-interval="5000">
+                    <img src="./images/Rosé_02.jpg" class="d-block w-100" alt="wine bottles">
+                </div>
+                <div class="carousel-item" data-interval="5000">
+                    <img src="./images/Wine_White_1.jpg" class="d-block w-100" alt="wine bottles">
+                </div>
+                <div class="carousel-item" data-interval="5000">
+                    <img src="./images/Wine_Club_1.jpg" class="d-block w-100" alt="wine bottles">
+                </div>
+            </div>
+        </div>
+
+        <!--Clean Wine 101-->
+        <div class="cleanWine">
+            <div class="inner-text">
+                <p style ="text-align: center">
+                    <strong>CLEAN-CRAFTED™</strong>
+                    Wine 101
+                </p>
+            </div>
         </div>
         
     </div>  
     <!-- Content end -->
+
   
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -70,5 +108,14 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+    <!-- Internal Javascript -->
+    <script>
+       $(document).ready(function () {
+        $('.first-button').on('click', function () {
+            $('.animated-icon1').toggleClass('open');
+        });
+
+    }) 
+    </script>
 </body>
 </html>
