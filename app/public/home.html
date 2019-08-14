@@ -104,14 +104,36 @@
             <h2 style="letter-spacing: 3px; padding-top: 20px">Find Your Partner in Wine</h2>
             <p style="font-size: 20px">Take our quiz to determine your perfect wine profile.</p>
             <br>
-            <button type="button" class="btn btn-success" id="quiz-btn">Get Started</button>
+            <button type="button" class="btn btn-success" id="quiz-btn" data-toggle="modal" data-target="#wineQuizModal">Get Started</button>
             <img src="images/quiz-background.jpeg" alt="flower divider">
+        </div>
+
+        <!-- Wine Quiz Modal -->
+        <div class="modal fade" id="wineQuizModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Each question will ask you to pick a favorite from a selected list.
+                            Choose only one option for each question.  You can retake the quiz if you have multiple favorites.
+                            A wine recommendation will be suggested based on your answers.
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                         <!-- insert quix questions -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
         <!-- Contact Lindsey Modal -->
-      
-        <!-- Modal -->
         <div class="modal fade" id="contactMe" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
