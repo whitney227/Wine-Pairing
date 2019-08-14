@@ -103,6 +103,7 @@
             <img src="images/quiz-background.jpeg" alt="flower divider">
             <h2 style="letter-spacing: 3px; padding-top: 20px">Find Your Partner in Wine</h2>
             <p style="font-size: 20px">Take our quiz to determine your perfect wine profile.</p>
+            <p style="font-size: 20px">(It's only 5 fun, quick questions.)</p>
             <br>
             <button type="button" class="btn btn-success" id="quiz-btn" data-toggle="modal" data-target="#wineQuizModal">Get Started</button>
             <img src="images/quiz-background.jpeg" alt="flower divider">
@@ -113,20 +114,70 @@
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Each question will ask you to pick a favorite from a selected list.
-                            Choose only one option for each question.  You can retake the quiz if you have multiple favorites.
-                            A wine recommendation will be suggested based on your answers.
+                        <h5 class="modal-title" id="exampleModalLabel" style="font-weight:bold">Fill in the blank with your favorite response.
+                        Only choose one selection per question.
+                        A wine recommendation will be suggested based on your answers.
+                        You may retake the quiz if you have multiple favorites. Cheers!
                         </h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body">
-                         <!-- insert quix questions -->
+                    <div class="modal-body" id=quizQuestions>
+                         <h5><strong>Tonight I'm craving...</strong></h5>
+                         <select data-placement="" class="chosen-select" id="q1">
+                             <option value=""></option>
+                             <option value="1">Salad</option>
+                             <option value="2">Antipasti</option>
+                             <option value="3">Seafood</option>
+                             <option value="4">Chicken</option>
+                             <option value="5">Asian Curry</option>
+                             <option value="6">Steak</option>
+                             <option value="7">Falafel</option>
+                             <option value="8">Pasta</option>
+                         </select>
+
+                         <h5><strong>The fruit that will whet your appetite is...</strong></h5>
+                         <select data-placement="" class="chosen-select" id="q2">
+                             <option value=""></option>
+                             <option value="1">Lemon</option>
+                             <option value="2">Pear</option>
+                             <option value="3">Nectarine/Peach</option>
+                             <option value="4">Cherry</option>
+                             <option value="5">Mango</option>
+                             <option value="6">Apple</option>
+                             <option value="7">Pineapple</option>
+                             <option value="8">Strawberry</option>    
+                         </select>
+
+                         <h5><strong>Pack your bags for a trip to...</strong></h5>
+                         <select data-placement="" class="chosen-select" id="q3">
+                             <option value=""></option>
+                             <option value="1">Italy</option>
+                             <option value="2">California</option>
+                             <option value="3">Oregon</option>
+                         </select>
+
+                         <h5><strong>'Tis the season to celebrate...</strong></h5>
+                         <select data-placement="" class="chosen-select" id="q4">
+                             <option value=""></option>
+                             <option value="1">fall</option>
+                             <option value="2">winter</option>
+                             <option value="3">spring</option>
+                             <option value="4">summer</option>
+                         </select>
+
+                         <h5><strong>Raise a glass of...</strong></h5>
+                         <select data-placement="" class="chosen-select" id="q5">
+                             <option value=""></option>
+                             <option value="1">red wine</option>
+                             <option value="2">white wine</option>
+                             <option value="3">rosé</option>
+                         </select>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-success" id="submitQuiz">Submit</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>

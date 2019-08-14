@@ -105,6 +105,14 @@ img {
 #wine-quiz-modal{
     font-family: "Oswald", sans-serif;
 }
+#quizQuestions{
+    margin-left: 25%;
+    line-height: 2.0;
+}
+.chosen-select{
+    padding-bottom: 5px;
+    width: 60%;
+}
 .page-footer{
     font-family: "Oswald", sans-serif;
 }
