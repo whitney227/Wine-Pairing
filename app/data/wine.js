@@ -3,7 +3,11 @@ var wines = [
         name:"2018 Che Fico Pinot Grigio",
         url:"https://scoutandcellar.com/productdetail/18CheFicoPinotGrigio?u=lindseygiddens",
         scores: [
-
+            "2",
+            "1",
+            "1",
+            "2",
+            "2"
         ]
     },
 
@@ -11,7 +15,11 @@ var wines = [
         name:"2018 Conte De La Terre Chenin Blanc",
         url:"https://scoutandcellar.com/productdetail/2018ConteDeLaTerreCheninBlanc?u=lindseygiddens",
         scores:[
-
+            "7",
+            "2",
+            "2",
+            "2",
+            "2"
         ]
     },
 
@@ -19,7 +27,11 @@ var wines = [
         name:"2018 Hushkeeper Pinot Gris",
         url:"https://scoutandcellar.com/productdetail/2018HushkeeperPinotGris?u=lindseygiddens",
         scores:[
-
+            "3",
+            "1",
+            "3",
+            "2",
+            "2"
         ]
     },
 
@@ -27,7 +39,11 @@ var wines = [
         name:"2018 Fieldhouse Chardonnay",
         url:"https://scoutandcellar.com/productdetail/2018FieldhouseChardonnay?u=lindseygiddens",
         scores:[
-
+            "4",
+            "2",
+            "2",
+            "2",
+            "2"
         ]
     },
 
@@ -35,7 +51,11 @@ var wines = [
         name:"2017 NV The Resident White Blend",
         url:"https://scoutandcellar.com/productdetail/2017NVTheResidentWhiteBlend?u=lindseygiddens",
         scores:[
-
+            "5",
+            "1",
+            "3",
+            "2",
+            "2"
         ]
     },
 
