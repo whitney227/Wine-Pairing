@@ -85,15 +85,23 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
   }
-
-.biography{
-    font-family: 'Poppins', sans-serif;
+#cleanWine-title{
     text-align: center;
-    min-width:300px;
-    letter-spacing: 3px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
-
+.wine101{
+    font-size: 20px;
+    margin-left: 40px;
+    margin-right: 40px
+}
+.wineQuiz{
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+}
+#quiz-btn{
+    margin-bottom: 20px;
+    font-family: "Oswald", sans-serif;
+}
 .page-footer{
     font-family: "Oswald", sans-serif;
 }
