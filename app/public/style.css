@@ -2,7 +2,7 @@
 .navbar-text{
     font-family: 'Oswald', sans-serif;
     font-size: 40px;
-    color: white;
+    color: #f8faff;
 }
 
 .nav-item{
@@ -86,24 +86,14 @@ img {
     background-size: cover;
   }
 
-.cleanWine{
-    font-family: "Oswald", sans-serif;
+.biography{
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     min-width:300px;
     letter-spacing: 3px;
     padding-top: 10px;
 }
-.wine101{
-    font-family: "Oswald", sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    margin-left: 20px;
-    margin-right: 20px;
 
-}
-#contactMe{
-    font-family: "Oswald", sans-serif;
-}
 .page-footer{
     font-family: "Oswald", sans-serif;
 }
