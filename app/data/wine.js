@@ -63,7 +63,11 @@ var wines = [
         name:"2018 Etnico Gran Reserva Rose",
         url:"https://scoutandcellar.com/productdetail/2018EtnicoGranReservaRose?u=lindseygiddens",
         scores:[
-
+            "1",
+            "8",
+            "4",
+            "2",
+            "3"
         ]
     },
 
@@ -71,7 +75,11 @@ var wines = [
         name:"2018 Gallivant Rose",
         url:"https://scoutandcellar.com/productdetail/2018GallivantRose?u=lindseygiddens",
         scores: [
-
+            "1",
+            "7",
+            "2",
+            "2",
+            "3"
         ]
     },
 
