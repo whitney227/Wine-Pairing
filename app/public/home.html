@@ -152,6 +152,7 @@
                              <option value="8">Strawberry</option>  
                              <option value="9">Cranberry</option> 
                              <option value="10">Blackberry</option>
+                             <option value="13">Boysenberry</option>
                          </select>
 
                          <h5><strong>Pack your bags for a trip to...</strong></h5>
@@ -177,7 +178,7 @@
                              <option value=""></option>
                              <option value="1">red wine</option>
                              <option value="2">white wine</option>
-                             <option value="3">rosé</option>
+                             <option value="7">rosé</option>
                          </select>
                     </div>
                     <div class="modal-footer">
@@ -300,6 +301,7 @@
     </div>  
     <!-- Content end -->
 
+</body>
   
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -312,40 +314,51 @@
     
     <!-- Internal Javascript -->
     <script>
+        // Grab the URL of the website
+        var currentURL = window.location.origin;
 
         $(document).ready(function () {    
+
+            // Navbar
             $('.first-button').on('click', function () {
                 $('.animated-icon1').toggleClass('open');
             });
+            
+            // Get the quiz inputs
+            $("#submitQuiz").on("click", function() {
+                event.preventDefault();
+                
+                // Form validation
+                function validateForm() {
+                    var isValid = true;
+                    
+                    // Check to see if all answers are filled
+                    $(".chosen-select").each(function () {
+                        if ($(this).val() === "") {
+                            isValid = false
+                        }
+                    });
+                    return isValid;
+                }
+                
+                // If all required fields are filled
+                if (validateForm()) {
+
+                    var userData = {
+                        name: $("#name").val(),
+                        url: $("#url").val(),
+                        scores: [
+                            $("#q1").val(),
+                            $("#q2").val(),
+                            $("#q3").val(),
+                            $("#q4").val(),
+                            $("#q5").val(),
+                        ]
+                    };
+                }
+                
+            })
+        
         }) 
-
-        $("#submitQuiz").on("click", function() {
-            function validateForm() {
-                var isValid = true;
-                $(".chosen-select").each(function () {
-                    if ($(this).val() === "") {
-                        isValid = false
-                    }
-                });
-                return isValid;
-            }
-
-            if (validateForm()) {
-
-                var userData = {
-                    name: $("#name").val(),
-                    url: $("#url").val(),
-                    scores: [
-                        $("#q1").val(),
-                        $("#q2").val(),
-                        $("#q3").val(),
-                        $("#q4").val(),
-                        $("#q5").val(),
-                    ]
-                };
-            }
-        })
-
     </script>
-</body>
 </html>
