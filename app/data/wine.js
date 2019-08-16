@@ -87,7 +87,11 @@ var wines = [
         name:"2018 Fiddleneck Pinot Noir",
         url:"https://scoutandcellar.com/productdetail/2018FiddleneckPinotNoir?u=lindseygiddens",
         scores:[
-
+            "4",
+            "4",
+            "2",
+            "1",
+            "1"
         ]
     },
 
@@ -95,7 +99,11 @@ var wines = [
         name:"2017 Conte de La Terre Pinot Noir",
         url:"https://scoutandcellar.com/productdetail/2017ContedeLaTerrePinotNoir?u=lindseygiddens",
         scores:[
-
+            "9",
+            "9",
+            "3",
+            "1",
+            "1"
         ]
     },
 
@@ -103,7 +111,11 @@ var wines = [
         name:"2016 The Resident Red Blend",
         url:"https://scoutandcellar.com/productdetail/TheResidentRedBlend?u=lindseygiddens",
         scores:[
-
+            "6",
+            "7",
+            "2",
+            "1",
+            "1"
         ]
     },
 
@@ -111,7 +123,11 @@ var wines = [
         name:"2017 Hushkeeper Zinfandel",
         url:"https://scoutandcellar.com/productdetail/2017HushkeeperZinfandel?u=lindseygiddens",
         scores:[
-
+            "6",
+            "8",
+            "2",
+            "1",
+            "1"
         ]
     },
 
@@ -119,7 +135,11 @@ var wines = [
         name:"2015 Fiddleneck Syrah",
         url:"https://scoutandcellar.com/productdetail/2015FiddleneckSyrah?u=lindseygiddens",
         scores:[
-
+            "6",
+            "4",
+            "2",
+            "1",
+            "1"
         ]
     },
 
@@ -127,7 +147,11 @@ var wines = [
         name:"2016 Fiddleneck Merlot",
         url:"https://scoutandcellar.com/productdetail/2016FiddleneckMerlot?u=lindseygiddens",
         scores:[
-
+            "10",
+            "4",
+            "2",
+            "1",
+            "1"
         ]
     },
 
@@ -135,7 +159,11 @@ var wines = [
         name:"2018 Fieldhouse Red Blend",
         url:"https://scoutandcellar.com/productdetail/2018FieldhouseRedBlend?u=lindseygiddens",
         scores:[
-
+            "10",
+            "7",
+            "2",
+            "1",
+            "1"
         ]
     },
 
@@ -143,7 +171,11 @@ var wines = [
         name:"2016 Bernhard Cabernet Sauvignon",
         url:"https://scoutandcellar.com/productdetail/BernhardCabernetSauvignon?u=lindseygiddens",
         scores:[
-
+            "6",
+            "10",
+            "2",
+            "1",
+            "1"
         ]
     },
 
@@ -151,7 +183,11 @@ var wines = [
         name:"2017 Hushkeeper Cabernet Sauvignon",
         url:"https://scoutandcellar.com/productdetail/2016HushkeeperCabernetSauvignon?u=lindseygiddens",
         scores:[
-
+            "8",
+            "10",
+            "2",
+            "1",
+            "1"
         ]
     }
 ]

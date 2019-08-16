@@ -132,9 +132,11 @@
                              <option value="3">Seafood</option>
                              <option value="4">Chicken</option>
                              <option value="5">Asian Curry</option>
-                             <option value="6">Steak</option>
+                             <option value="6">Steak/Beef</option>
                              <option value="7">Falafel</option>
                              <option value="8">Pasta</option>
+                             <option value="9">Pork Tenderloin</option>
+                             <option value="10">Grilled Vegetables</option>
                          </select>
 
                          <h5><strong>The fruit that will whet your appetite is...</strong></h5>
@@ -147,7 +149,9 @@
                              <option value="5">Mango</option>
                              <option value="2">Apple</option>
                              <option value="7">Raspberry</option>
-                             <option value="8">Strawberry</option>    
+                             <option value="8">Strawberry</option>  
+                             <option value="9">Cranberry</option> 
+                             <option value="10">Blackberry</option>
                          </select>
 
                          <h5><strong>Pack your bags for a trip to...</strong></h5>
@@ -314,6 +318,33 @@
                 $('.animated-icon1').toggleClass('open');
             });
         }) 
+
+        $("#submitQuiz").on("click", function() {
+            function validateForm() {
+                var isValid = true;
+                $(".chosen-select").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false
+                    }
+                });
+                return isValid;
+            }
+
+            if (validateForm()) {
+
+                var userData = {
+                    name: $("#name").val(),
+                    url: $("#url").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                    ]
+                };
+            }
+        })
 
     </script>
 </body>
