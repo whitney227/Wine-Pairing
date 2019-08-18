@@ -182,7 +182,7 @@
                          </select>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-success" id="submitQuiz">Submit</button>
+                        <button type="submit" class="btn btn-success" id="submitQuiz" data-search="wine match">Submit</button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -297,7 +297,11 @@
       
       </footer>
       <!-- Footer -->
-        
+
+      <!-- Quiz Results -->
+      <div class="quizResults">
+          <a class="winePick" id="winePick" target="_blank" href="">a</a>
+      </div>
     </div>  
     <!-- Content end -->
 
@@ -327,6 +331,7 @@
             // Get the quiz inputs
             $("#submitQuiz").on("click", function() {
                 event.preventDefault();
+                console.log("form submitted")
                 
                 // Form validation
                 function validateForm() {
@@ -355,8 +360,19 @@
                             $("#q5").val(),
                         ]
                     };
+
+                //    send the user to the url with the best match
+                $.post(currentURL + "/api/wines", userData, function (data) {
+                    $("#winePick").attr(data.url);
+                    console.log(data.url);
+                })
+
+                // =========================================================
                 }
-                
+                else {
+                    alert ("Please fill out all the questions before submitting!")
+                }
+                return false;
             })
         
         }) 
