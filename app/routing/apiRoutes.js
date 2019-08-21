@@ -19,15 +19,14 @@ apiRouter.post("/api/wines", function(req, res) {
     };
 
     var userData = req.body;
-    var userScores = userData.scores;
+    // var userScores = userData.scores;
 
-    console.log(userScores);
-    var totDiff = 0;
+    console.log(userData);
+
     for(var i = 0; i < wines.length; i++){
-        console.log(wines[i]);
-        totDiff = 0;
-        for(var j = 0; j < wines[i].scores[j]; j++){
-            totDiff += Math.abs(parseInt(userScores[j])- parseInt(wines[i].scores[j]));
+        var totDiff = 0;
+        for(var j = 0; j < wines[i].scores.length; j++){
+            totDiff += Math.abs(parseInt(wines[i].scores[j])- parseInt(userData.scores[j]));
         }
         if(totDiff <= bestMatch.difference){
             bestMatch.name = wines[i].name
@@ -36,7 +35,7 @@ apiRouter.post("/api/wines", function(req, res) {
         }
     }
     // This returns the bestMatch wine object to the frontend in JSON format
-    bestMatch = wines[bestMatch.url]
+    wines.push(userData)
     res.json(bestMatch)
     console.log(bestMatch)        
 });
