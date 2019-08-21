@@ -123,3 +123,38 @@ img {
     padding: 5px;
 }
 
+.containerBio-fluid{
+    font-family: 'Noto Serif TC', serif;
+    background-image: url("./images/lg-background.jpg"); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    font-weight: bold;
+    padding-top: 20px;
+}
+#bio{
+    margin-right: 20%;
+    margin-left: 20%;
+    padding-top: 20px;
+    /* padding-bottom: 20px; */
+}
+#profilePic{
+    padding-top:20px;
+    width: 250px;
+    height: 500px;
+    border-radius: 30px;
+}
+.bio-content{
+    padding-top: 10px;
+    font-size: 22px;
+}
+.join-today{
+    text-align: center;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    font-size: 72px;
+}
+#join-link{
+    color: black;
+}
+
+

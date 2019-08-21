@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Wine Pairing</title>
+    
+    <!-- Styling -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+    <link rel="stylesheet" href="style.css">
+      
+    </head>
+    
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-dark bg-dark">
+
+        <!-- Navbar brand -->
+        <a class="navbar-text" href="#"></a>
+   
+        <!-- Collapse button -->
+        <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent20"
+          aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="animated-icon1"><span></span><span></span><span></span></div>
+        </button>
+      
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent20">
+      
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Meet Lindsey</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://scoutandcellar.com/membership/?u=lindseygiddens">Become a Member</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://scoutandcellar.com/be-in-the-wine-business/?u=lindseygiddens">Join the CLEAN-CRAFTED™ Journey</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://scoutandcellar.com/order/Products?items=99999&pg=1&u=lindseygiddens">Shop Online</a>
+            </li>
+            </ul>
+            <!-- Links -->
+      
+        </div>
+      </nav>
+
+      <!-- Header -->
+      <div class="header">
+          <img id="SClogo" src="./images/lg-header.jpg" alt="consultant logo">
+      </div>
+
+    <!-- Content start -->
+    <div class="containerBio-fluid">
+        <h1 style="text-align: center">Hello, Wine Enthusiasts!</h1>
+        <div class="row" id="bio">
+            <div class="col-md-4">
+                <img id="profilePic" src="./images/lg2.jpeg">
+            </div>
+            <div class="col-md-8" style="padding-left: 60px">
+                <div class="bio-content">
+                    <p>My name is Lindsey Giddens and I am an Executive Consultant with Scout & Cellar - a clean crafted wine company founded in August 2017. 
+                    My passion for what I do is inspired by our fearless leader, Sarah Shadonix, and her goal to find cleaner, healthier, better wine options.</p>
+                    <br>
+                    <p style="font-style: italic">What does that mean?</p>
+                    <br>
+                    <p>By partnering with organic vineyards, Scout & Cellar has started an initiative to remove unnecessary additives from wine. 
+                    We only only sell clean, biodynamic wines which eliminate hangovers, headaches, and other adverse side effects that tend to accompany mass produced wine. 
+                    I joined Scout & Cellar due to my love of all things wine and my distaste for hangovers. </p>
+                    <br>
+                    
+                </div>
+            </div>
+                 
+        </div>
+        <div class="join-today">
+            <a id="join-link" target="_blank" href="https://scoutandcellar.com/be-in-the-wine-business/?u=lindseygiddens">JOIN MY TEAM TODAY</a>
+        </div>
+
+
+  
+        
+        <!-- Contact Lindsey Modal -->
+        <div class="modal fade" id="contactMe" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Contact Me</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Default form contact -->
+                <form class="text-center border border-light p-5" 
+                action="MAILTO:lindseycgiddens@gmail.com" method="post" enctype="text/plain" name="EmailTestForm">
+                    <!-- Name -->
+                    <input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Name"/>
+                
+                    <!-- Email -->
+                    <input type="email" id="defaultContactFormEmail" class="form-control mb-4" placeholder="E-mail"/>
+                
+                    <!-- Subject -->
+                    <label>Subject</label>
+                    <select class="browser-default custom-select mb-4">
+                        <option value="" disabled>Choose option</option>
+                        <option value="1" selected>Host a Tasting</option>
+                        <option value="2">Membership</option>
+                        <option value="3">Become a Consultant</option>
+                    </select>
+    
+                    <!-- Message -->
+                    <div class="form-group">
+                        <textarea class="form-control rounded-0" id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+                    </div>
+    
+                    <!-- Copy -->
+                    <div class="custom-control custom-checkbox mb-4">
+                        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                        <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+                    </div>
+    
+                    <!-- Send button -->
+                    <input class="btn btn-dark btn-block" type="submit" value="Send" />
+    
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        
+        <!-- Footer -->
+        <footer class="page-footer font-small special-color-dark pt-4">
+
+        <!-- Footer Text -->
+        <div class="container-fluid text-center" style="margin-bottom: 10px">
+      
+          <!-- Grid row -->
+            <div class="row">
+      
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3" style="float:inline-end">
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold">Host a Tasting</h5>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#contactMe" style="margin: 0">
+                    Contact Lindsey
+                    </button>
+                </div>
+                <!-- Grid column -->
+        
+                <hr class="clearfix w-100 d-md-none pb-3">
+        
+                <!-- Grid column -->
+                <div class="col-md-6 mb-md-0 mb-3">
+        
+                    <!-- Content -->
+                    <h5 class="text-uppercase font-weight-bold">Connect with Scout & Cellar</h5>
+                    <a href="https://www.facebook.com/scoutandcellar/" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/scoutandcellar/" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/scoutandcellar" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <!-- Grid column -->
+      
+            </div>
+            <!-- Grid row -->
+      
+        </div>
+        <!-- Footer Text -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+          <a href="https://whitney227.github.io/My-Portfolio/home.html"> Whitney Crawford</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+
+    </div>  
+    <!-- Content end -->
+
+</body>
+  
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+    <!-- Fancybox -->
+    <script src="jquery.fancybox.min.js"></script>
+    
+    <!-- Internal Javascript -->
+    <script>
+      
+        $(document).ready(function () {    
+
+            // Navbar
+            $('.first-button').on('click', function () {
+                $('.animated-icon1').toggleClass('open');
+            });
+
+        })
+    </script>
+</html>

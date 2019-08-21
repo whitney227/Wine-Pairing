@@ -14,6 +14,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
     <link rel="stylesheet" href="style.css">
       
     </head>
@@ -43,10 +44,10 @@
                 <a class="nav-link" href="#">Meet Lindsey</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://scoutandcellar.com/membership/?u=lindseygiddens">Become a Member</a>
+                <a class="nav-link" target="_blank" href="https://scoutandcellar.com/membership/?u=lindseygiddens">Become a Member</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="https://scoutandcellar.com/be-in-the-wine-business/?u=lindseygiddens">Join the CLEAN-CRAFTED™ Journey</a>
+                <a class="nav-link" target="_blank" href="https://scoutandcellar.com/be-in-the-wine-business/?u=lindseygiddens">Join the CLEAN-CRAFTED™ Journey</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" target="_blank" href="https://scoutandcellar.com/order/Products?items=99999&pg=1&u=lindseygiddens">Shop Online</a>
@@ -182,7 +183,8 @@
                          </select>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-success" id="submitQuiz" data-search="wine match">Submit</button>
+                        <a id="submitQuiz" href="javascript:;" class="btn btn-success">Submit</a>
+                        <!-- <button type="submit" class="btn btn-success" id="submitQuiz" data-search="wine match">Submit</button> --> 
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -298,10 +300,6 @@
       </footer>
       <!-- Footer -->
 
-      <!-- Quiz Results -->
-      <div class="quizResults">
-          <a class="winePick" id="winePick" target="_blank" href="">a</a>
-      </div>
     </div>  
     <!-- Content end -->
 
@@ -315,6 +313,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+    <!-- Fancybox -->
+    <script src="jquery.fancybox.min.js"></script>
     
     <!-- Internal Javascript -->
     <script>
@@ -350,8 +350,6 @@
                 if (validateForm()) {
 
                     var userData = {
-                        name: $("#name").val(),
-                        url: $("#url").val(),
                         scores: [
                             $("#q1").val(),
                             $("#q2").val(),
@@ -360,14 +358,8 @@
                             $("#q5").val(),
                         ]
                     };
-
-                //    send the user to the url with the best match
-                $.post(currentURL + "/api/wines", userData, function (data) {
-                    $("#winePick").attr(data.url);
-                    console.log(data.url);
-                })
-
-                // =========================================================
+                    console.log(userData)
+        
                 }
                 else {
                     alert ("Please fill out all the questions before submitting!")

@@ -17,7 +17,6 @@ apiRouter.post("/api/wines", function(req, res) {
         url: "",
         difference: Infinity
     };
-    console.log(req.body);
 
     var userData = req.body;
     var userScores = userData.scores;
@@ -37,7 +36,9 @@ apiRouter.post("/api/wines", function(req, res) {
         }
     }
     // This returns the bestMatch wine object to the frontend in JSON format
-    res.json(bestMatch)        
+    bestMatch = wines[bestMatch.url]
+    res.json(bestMatch)
+    console.log(bestMatch)        
 });
 
 module.exports = apiRouter;
