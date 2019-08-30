@@ -132,16 +132,14 @@ img {
     padding-top: 20px;
 }
 #bio{
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 10%;
+    margin-left: 10%;
     padding-top: 20px;
     /* padding-bottom: 20px; */
 }
 #profilePic{
     padding-top:20px;
-    width: 250px;
-    height: 500px;
-    border-radius: 30px;
+    border-radius: 50%;
 }
 .bio-content{
     padding-top: 10px;
