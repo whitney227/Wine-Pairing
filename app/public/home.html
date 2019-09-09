@@ -368,7 +368,7 @@
             $.post(currentURL + "/api/wines", userData, function (data) {
                 // Grab results from the AJAX post so that the best match is displayed
                 $("#wineMatch").attr("href", data.url)
-                alert ("Click the link to discover your wine match "+ data.url)
+                alert ("Paste the link below to discover your wine match "+ data.url)
                 // console.log(data.url);
 
                 // clear fields
